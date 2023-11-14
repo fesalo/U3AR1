@@ -1,0 +1,3 @@
+empate.txt
+    sed -i 's/,/ /g' derbi.txt
+    grep -w empate derbi.txt | awk '{print $7,$6, $1, $2, $3, $4, $5}'| sort >> empate.txt
