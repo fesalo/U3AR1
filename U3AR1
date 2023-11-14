@@ -5,3 +5,7 @@ Levante.txt:
     sed -i 's/Levante/Levanteg/' derbi.txt
     awk '{print $7, $6, $1, $2, $3, $4, $5}' derbi.txt |grep -w Levante| sort >> Levante.txt
     sed -i 's/Levanteg/Levante/' Levante.txt
+Valencia.txt
+    sed -i 's/Valencia/Valenciag/' derbi.txt
+    awk '{print $7, $6, $1, $2, $3, $4, $5}' derbi.txt |grep -w Valencia| sort >> Valencia.txt
+    sed -i 's/Valenciag/Valencia/' Valencia.txt
