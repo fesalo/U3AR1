@@ -1,3 +1,7 @@
 empate.txt
     sed -i 's/,/ /g' derbi.txt
     grep -w empate derbi.txt | awk '{print $7,$6, $1, $2, $3, $4, $5}'| sort >> empate.txt
+Levante.txt:
+    sed -i 's/Levante/Levanteg/' derbi.txt
+    awk '{print $7, $6, $1, $2, $3, $4, $5}' derbi.txt |grep -w Levante| sort >> Levante.txt
+    sed -i 's/Levanteg/Levante/' Levante.txt
